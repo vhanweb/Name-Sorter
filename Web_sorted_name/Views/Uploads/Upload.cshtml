@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "Upload";
+}
+
+<h2>Upload</h2>
+<form method="post" enctype="multipart/form-data">
+
+    <label for="file">Filename:</label>
+    <input type="file" name="file" id="file" />
+
+    <br />
+    <button type="submit" id="btn_submit" class="btn btn-sm btn-success" onclick="tes()">Upload</button>
+
+
+    <table class="table table-bordered table-responsive table-hover table-striped" align="center">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Given Name</th>
+                <th>Last Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (ViewBag.test != null)
+            {
+                int i = 1;
+                foreach (var item in ViewBag.test)
+                {
+                    <tr>
+                        <td>@i</td>
+                        <td scope="row">@item._GivenName</td>
+                        <td>@item._LastName</td>
+
+                    </tr>
+                    i++;
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="3">Tidak Ada Data</td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</form>

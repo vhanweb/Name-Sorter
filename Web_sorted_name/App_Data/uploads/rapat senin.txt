@@ -1,0 +1,24 @@
+PITI
+Peralatan sesuai reqruiment
+
+MD
+Untuk Database
+kemungkinan sehari 1000 data per aplikasi bisa memakai DB EDW eksiting, memakai schema baru
+data stage fisik untuk data gede
+data stage vm untuk aplikasi kecil
+untuk rekon memakai server fisik karena masi bisa dipakai
+untuk Server
+spek server timpidi
+ED
+12 core, ram 64 GB ,storage C: 278 GB, D: 1 tera, f: 850GB
+server Dev 
+tidak pake server SIT dan UAT dikarena kan masalah waktu
+nama server DCLEDWETLAPP04 prod
+DCLEDWDBO13/14 RAC prod
+dev DCLEDWTRF01
+DB DCLDEVDBO02
+
+
+
+
+
